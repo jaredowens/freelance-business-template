@@ -1,8 +1,39 @@
+import { siteConfig } from "@/lib/siteConfig";
+
 export default function CTASection() {
   return (
-    <section className='p-10 text-center bg-gray-100'>
-      <h2 className='text-2xl font-bold mb-4'>Need Service Today?</h2>
-      <a href='/contact' className='bg-black text-white px-6 py-2 rounded'>Contact Us</a>
+    <section className="px-6 py-20">
+      <div className="mx-auto max-w-6xl rounded-3xl border border-white/10 bg-gradient-to-r from-red-700 to-red-600 p-10 shadow-2xl shadow-red-950/30 md:p-14">
+        <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+          <div className="max-w-2xl">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-100/80">
+              Need service now?
+            </p>
+            <h2 className="mt-3 text-3xl font-black text-white md:text-4xl">
+              Get dependable service from {siteConfig.businessName}
+            </h2>
+            <p className="mt-4 text-lg text-red-50/90">
+              From repairs to installations, we help homeowners and businesses in{" "}
+              {siteConfig.city} get the job done right.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/contact"
+              className="rounded-lg bg-white px-6 py-4 font-bold text-red-700 transition hover:bg-red-50"
+            >
+              Contact Us
+            </a>
+            <a
+              href={`tel:${siteConfig.phone}`}
+              className="rounded-lg border border-white/30 px-6 py-4 font-bold text-white transition hover:bg-white/10"
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
