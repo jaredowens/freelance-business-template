@@ -18,20 +18,20 @@ export default function CTASection() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="/contact"
-              className="rounded-lg bg-white px-6 py-4 font-bold text-red-700 transition hover:bg-red-50"
-            >
-              Contact Us
-            </a>
-            <a
-              href={`tel:${siteConfig.phone}`}
-              className="rounded-lg border border-white/30 px-6 py-4 font-bold text-white transition hover:bg-white/10"
-            >
-              Call Now
-            </a>
-          </div>
+        <div className="flex flex-wrap gap-4">
+ <a
+  href="/contact"
+  className="rounded-lg bg-black px-6 py-4 font-bold text-white shadow-xl shadow-black/40 transition hover:scale-[1.02] hover:bg-neutral-800"
+>
+  Contact Us
+</a>
+  <a
+    href={`tel:${siteConfig.phone}`}
+    className="rounded-lg border border-white/30 px-6 py-4 font-bold text-white transition hover:bg-white/10"
+  >
+    Call Now
+  </a>
+</div>
         </div>
       </div>
     </section>
