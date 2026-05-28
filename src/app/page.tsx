@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import CTASection from "@/components/CTASection";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 import { siteConfig } from "@/lib/siteConfig";
 
 const reasons = [
@@ -7,21 +8,6 @@ const reasons = [
   "Drain cleaning for main lines, individual drains, and roof vents",
   "New construction and custom home work",
   "Serving Lubbock and nearby counties",
-];
-
-const testimonials = [
-  {
-    name: "Google Review",
-    text: "Real customer reviews will go here once they are collected. This section is built to showcase trust, service quality, and local reputation.",
-  },
-  {
-    name: "Google Review",
-    text: "Customer feedback can highlight fast response times, clean work, honest communication, and dependable service.",
-  },
-  {
-    name: "Google Review",
-    text: "Once real reviews are added, this section will help visitors feel more confident before calling or requesting a quote.",
-  },
 ];
 
 const serviceDetails: Record<string, string> = {
@@ -139,43 +125,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.25em] text-blue-400">
-              Reviews
-            </p>
-            <h2 className="mt-3 text-4xl font-black text-white">
-              Real customer reviews will help build trust fast
-            </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-400">
-              Once real Google reviews are added, this section can showcase customer
-              experiences, local reputation, and the quality of Lone Star’s work.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-2xl border border-white/10 bg-white/5 p-7 shadow-xl shadow-black/20"
-              >
-                <p className="text-xl text-yellow-300">★★★★★</p>
-                <p className="mt-4 text-lg leading-8 text-slate-300">“{item.text}”</p>
-                <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-red-400">
-                  {item.name}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 text-center">
-            <p className="text-sm font-semibold text-slate-400">
-              Leave a Google review for $25 off your next service call.
-            </p>
-          </div>
-        </div>
-      </section>
+      <ReviewsCarousel />
 
       <CTASection />
     </>
