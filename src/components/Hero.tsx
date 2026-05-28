@@ -72,7 +72,7 @@ export default function Hero() {
         <div className="relative">
           <div className="rounded-3xl border border-white/10 bg-transparent p-6">
             <img
-              src="/logo.jpg"
+              src="/lonestarlogo.png"
               alt={`${siteConfig.businessName} logo`}
               className="mx-auto mb-6 h-auto w-full max-w-md rounded-xl object-contain"
             />
