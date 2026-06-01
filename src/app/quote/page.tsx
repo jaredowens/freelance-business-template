@@ -19,7 +19,7 @@ export default function QuotePage() {
 
         <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/30">
           <form
-            action="https://formspree.io/f/xlgpvwyv"
+            action="https://formspree.io/f/xaqkgryv"
             method="POST"
             className="space-y-6"
           >
